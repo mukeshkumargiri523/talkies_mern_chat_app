@@ -29,7 +29,9 @@ function ScrollableChat({ messages, setCallFetchMessage }) {
     if (res.data.success === true) {
       console.log(res.data.pdfData.pdf);
       setPdfData([...pdfData, res.data.pdfData]);
-      setPdfFile(`http://localhost:5000/files/${res?.data?.pdfData?.pdf}`);
+      setPdfFile(
+        `https://talkies-mern-chat-app.onrender.com/files/${res?.data?.pdfData?.pdf}`
+      );
       return;
     } else {
       return;
