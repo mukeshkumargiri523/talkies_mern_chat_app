@@ -25,7 +25,7 @@ import { FaFileImage } from "react-icons/fa";
 import { IoArrowRedo } from "react-icons/io5";
 import { FaFilePdf } from "react-icons/fa";
 import animationData from "../../animations/lotte_typing_animation.json";
-const ENDPOINT = "http://localhost:5000";
+const ENDPOINT = "https://talkies-mern-chat-app.onrender.com";
 let socket, selectedChatCompare;
 
 function SingleChat({ fetchAgain, setFetchAgain }) {
